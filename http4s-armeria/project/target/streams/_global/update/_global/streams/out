@@ -1,0 +1,3 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/tferraro/dev/scala-webfw-examples/http4s-armeria/project/"), "http4s-armeria-build")...
+[debug] Done updating ProjectRef(uri("file:/Users/tferraro/dev/scala-webfw-examples/http4s-armeria/project/"), "http4s-armeria-build")
