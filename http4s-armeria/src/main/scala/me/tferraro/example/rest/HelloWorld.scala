@@ -1,4 +1,4 @@
-package me.tferraro.example
+package me.tferraro.example.rest
 
 import cats.Applicative
 import cats.implicits._

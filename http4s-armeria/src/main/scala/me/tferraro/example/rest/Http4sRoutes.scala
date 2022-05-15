@@ -1,11 +1,11 @@
-package me.tferraro.example
+package me.tferraro.example.rest
 
 import cats.effect.Sync
 import cats.implicits._
 import org.http4s.HttpRoutes
 import org.http4s.dsl.Http4sDsl
 
-object Http4sArmeriaRoutes {
+object Http4sRoutes {
   def helloWorldRoutes[F[_]: Sync](H: HelloWorld[F]): HttpRoutes[F] = {
     val dsl = new Http4sDsl[F]{}
     import dsl._

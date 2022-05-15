@@ -8,9 +8,11 @@ ThisBuild / organizationName := "tferraro"
 lazy val root = (project in file("."))
   .settings(
     name := "example-armeria-http4s",
-    libraryDependencies ++= webFramework
+    libraryDependencies ++= webFramework ++ grpcDependencies
       ++ testDependencies.map(_ % Test)
-      ++ runtimeDependencies.map(_ % Runtime)
+      ++ runtimeDependencies.map(_ % Runtime),
+    // For IntelliJ to detect the compiled .proto classes
+    sbtprotoc.ProtocPlugin.ProtobufConfig / scalaSource := sourceDirectory.value / "src_managed"
   )
-
+  .enablePlugins(Fs2Grpc)
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="http4s-armeria_9408" />
+    <profile name="sbt 1" modules="http4s-armeria_2996" />
     <profile name="sbt 2" modules="example-armeria-http4s">
       <option name="implicitConversions" value="true" />
       <option name="higherKinds" value="true" />
@@ -29,7 +29,9 @@
         <parameter value="-Xlint:poly-implicit-overload" />
         <parameter value="-Xlint:private-shadow" />
         <parameter value="-Xlint:stars-align" />
+        <parameter value="-Xlint:strict-unsealed-patmat" />
         <parameter value="-Xlint:type-parameter-shadow" />
+        <parameter value="-Xlint:-byname-implicit" />
         <parameter value="-Wunused:nowarn" />
         <parameter value="-Wdead-code" />
         <parameter value="-Wextra-implicit" />
@@ -42,6 +44,8 @@
         <parameter value="-Wunused:patvars" />
         <parameter value="-Wunused:privates" />
         <parameter value="-Wvalue-discard" />
+        <parameter value="-Vimplicits" />
+        <parameter value="-Vtype-diffs" />
       </parameters>
     </profile>
   </component>
