@@ -3,10 +3,10 @@ syntax = "proto3";
 package me.tferraro.example.grpc;
 
 service HelloService {
-  rpc unary(HelloRequest) returns (HelloReply) {}
-  rpc serverStreaming(HelloRequest) returns (stream HelloReply) {}
-  rpc clientStreaming(stream HelloRequest) returns (HelloReply) {}
-  rpc bidiStreaming(stream HelloRequest) returns (stream HelloReply) {}
+  rpc greet(HelloRequest) returns (HelloReply) {}
+  //rpc serverStreaming(HelloRequest) returns (stream HelloReply) {}
+  //rpc clientStreaming(stream HelloRequest) returns (HelloReply) {}
+  //rpc bidiStreaming(stream HelloRequest) returns (stream HelloReply) {}
 }
 
 message HelloRequest {
